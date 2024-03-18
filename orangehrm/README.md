@@ -4,11 +4,11 @@ This project demonstrates automated testing of the login functionality of the Or
 
 ## Table of Contents
 
--   [Prerequisites](https://chat.openai.com/c/0eeae966-6457-4452-97e7-83d486224bbe#prerequisites)
--   [Installation](https://chat.openai.com/c/0eeae966-6457-4452-97e7-83d486224bbe#installation)
--   [Usage](https://chat.openai.com/c/0eeae966-6457-4452-97e7-83d486224bbe#usage)
--   [Contributing](https://chat.openai.com/c/0eeae966-6457-4452-97e7-83d486224bbe#contributing)
--   [License](https://chat.openai.com/c/0eeae966-6457-4452-97e7-83d486224bbe#license)
+-   [Prerequisites](https://github.com/sandipthombare/SoftwareTesting-Automation/blob/main/orangehrm/README.md#prerequisites)
+-   [Installation](https://github.com/sandipthombare/SoftwareTesting-Automation/blob/main/orangehrm/README.md#Installation)
+-   [Usage](https://github.com/sandipthombare/SoftwareTesting-Automation/blob/main/orangehrm/README.md#Usage)
+-   [Contributing](https://github.com/sandipthombare/SoftwareTesting-Automation/blob/main/orangehrm/README.md#Contributing)
+-   [License](https://github.com/sandipthombare/SoftwareTesting-Automation/blob/main/orangehrm/README.md#License)
 ## Prerequisites
 
 Before running this automation script, ensure that you have the following installed:
