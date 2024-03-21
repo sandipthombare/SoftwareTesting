@@ -1,4 +1,4 @@
-# OrangeHRM Login Functionality Automation
+# OrangeHRM Functionality Automation
 
 This project demonstrates automated testing of the login functionality of the OrangeHRM website using Java and Selenium WebDriver.
 
