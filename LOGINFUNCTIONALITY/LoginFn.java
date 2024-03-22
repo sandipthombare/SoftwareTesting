@@ -13,13 +13,19 @@ public class LoginFn {
     public static void main(String[] args) throws Exception {
 
         System.out.println("Hello, World!");
+     
         System.setProperty("webdriver.chrome.driver","C:\\TESTING-VSCODE-JAVA\\DEPENDENCIES\\chromedriver-win32\\chromedriver.exe");
-       
         WebDriver driver = new ChromeDriver();
+       
+        login(driver);
+
+    }
+
+    public static void login(WebDriver driver)throws Exception{
+       try{
         driver.navigate().to("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-        
-        // Thread.sleep(10000);
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+       
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
         
         WebElement username = wait.until(ExpectedConditions.elementToBeClickable(By.name("username")));
@@ -32,7 +38,17 @@ public class LoginFn {
         button.click();
         Thread.sleep(3000);
 
-        driver.quit();
+        if(driver.getCurrentUrl().contains("dashboard")){
+            System.out.println("Login successful");
+        } else {
+            System.out.println("Login failed");
+        }
 
+    }catch(Exception e){
+        e.printStackTrace();
+        System.out.println("Login failed "+ e.getMessage());
+    }finally{
+        
+    }
     }
 }
