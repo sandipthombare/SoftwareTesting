@@ -19,6 +19,7 @@ public class AddEmployee {
         try{
             LoginFn.login(driver);
             AddRecord(driver);
+            ContactDetails(driver);
         }catch (Exception e) {
             System.out.println("Execution error");
         }
@@ -51,7 +52,7 @@ public class AddEmployee {
             switchElement.click();
 
             WebElement Username = driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[3]/div/div[1]/div/div[2]/input"));
-            Username.sendKeys("sandip101");
+            Username.sendKeys("sandip12911");
 
             WebElement Status = driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[3]/div/div[2]/div/div[2]/div[1]/div[2]/div/label"));
             Status.click();
@@ -73,12 +74,13 @@ public class AddEmployee {
             WebElement dropdown = driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[2]/div[2]/div[2]/div/div[2]/div/div/input"));
             dropdown.sendKeys("2030-09-05");
 
-            WebElement Nationality = driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[3]/div[1]/div[1]/div/div[2]/div/div"));
-            Nationality.click();
-            // Select select = new Select(Nationality);
+            WebElement Nationality = driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[3]/div[1]/div[1]/div/div[2]/div/div/div[1]"));
+            // Nationality.click();
+            // driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[3]/div[1]/div[1]/div/div[2]/div/div/div[1]")).click();
+            Select select = new Select(Nationality);
             Nationality.sendKeys("Indian");
 
-            // select.selectByValue("Indian");
+            select.selectByValue("Indian");
 
             WebElement MartialStatus = driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[3]/div[1]/div[2]/div/div[2]/div/div"));
             // Select select1 = new Select(MartialStatus);
@@ -108,6 +110,20 @@ public class AddEmployee {
             Thread.sleep(3000);
 
     }
+    public static void ContactDetails(WebDriver driver)throws Exception{
+        WebElement ContactDetails1= driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[1]/div[2]/div[2]/a"));
+        ContactDetails1.click();
+
+        driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[1]/div/div[1]/div/div[2]/input")).sendKeys("Anand street");
+        driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[1]/div/div[2]/div/div[2]/input")).sendKeys("Anand street");
+        driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[1]/div/div[3]/div/div[2]/input")).sendKeys("Anand street");
+        driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[1]/div/div[4]/div/div[2]/input")).sendKeys("415894");
+        
+        driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[1]/div/div[4]/div/div[2]/")).click();
+
+    
+    }
+    
 
 
 
