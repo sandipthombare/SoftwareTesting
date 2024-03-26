@@ -25,7 +25,7 @@ Before running this automation script, ensure that you have the following instal
     
   
     
-    `git clone https://github.com/sandipthombare/SoftwareTesting-Automation.git` 
+    `git clone https://github.com/sandipthombare/SoftwareTesting-Automation-Demo` 
     
 2.  Navigate to the project directory:
     
